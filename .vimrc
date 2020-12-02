@@ -6,13 +6,13 @@ Plug 'simeji/winresizer'
 Plug 'thinca/vim-quickrun'
 Plug 'justmao945/vim-clang'
 Plug 'aserebryakov/vim-todo-lists'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'jacquesbh/vim-showmarks'
 call plug#end()
 
 " BackSpaceで消せるように
 set backspace=indent,eol,start
 
-" ctrl n でツリー表示
-map <C-n> :NERDTreeToggle<CR>
 
 " ctrl r でクイック実行
 map <F5> :QuickRun<CR>
@@ -28,6 +28,7 @@ let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>r :QuickRun -args "< test.txt"<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
 for n in range(1, 9)
   execute 'nnoremap <Leader>'.n  ':<C-u>tabnext'.n.'<CR>'
 endfor
@@ -45,6 +46,8 @@ set termwinsize=7x0
 
 " 構文ハイライト
 syntax enable
+set background=dark
+colorscheme solarized
 
 " テーマ設定
 " set background=dark
