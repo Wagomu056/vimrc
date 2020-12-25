@@ -2,26 +2,13 @@
 call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
-Plug 'simeji/winresizer'
 Plug 'thinca/vim-quickrun'
 Plug 'justmao945/vim-clang'
-Plug 'aserebryakov/vim-todo-lists'
-Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'jacquesbh/vim-showmarks'
 call plug#end()
 
 " BackSpaceで消せるように
 set backspace=indent,eol,start
-
-
-" ctrl r でクイック実行
-map <F5> :QuickRun<CR>
-
-let g:VimTodoListsCustomKeyMapper = 'VimTodoListsCustomMappings'
-
-function! VimTodoListsCustomMappings()
-  nnoremap <Leader>d :VimTodoListsToggleItem<CR>
-endfunction
 
 " Leader
 let mapleader = "\<Space>"
@@ -41,18 +28,9 @@ let g:quickrun_config={'*': {'split': '10'}}
 " ターミナル関連
 " 画面分割は下から
 set splitbelow
-" ターミナルサイズ
-set termwinsize=7x0
 
 " 構文ハイライト
 syntax enable
-set background=dark
-colorscheme solarized
-
-" テーマ設定
-" set background=dark
-" colorscheme solarized
-" let g:solarized_termcolors=256
 
 " jjでESC
 inoremap <silent> jj <ESC>
