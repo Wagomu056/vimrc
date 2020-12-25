@@ -3,9 +3,17 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'thinca/vim-quickrun'
-Plug 'justmao945/vim-clang'
 Plug 'jacquesbh/vim-showmarks'
+Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
+
+" C-h C-l で先頭、末尾に
+nnoremap <C-h> ^
+nnoremap <C-l> $
+
+" Ctrl + j と Ctrl + k で 段落の前後に移動
+nnoremap <C-j> }
+nnoremap <C-k> {
 
 " BackSpaceで消せるように
 set backspace=indent,eol,start
