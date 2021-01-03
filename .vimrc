@@ -5,7 +5,10 @@ Plug 'itchyny/lightline.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'jacquesbh/vim-showmarks'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
+
+set tags=.tags
 
 " C-h C-l で先頭、末尾に
 nnoremap <C-h> ^
