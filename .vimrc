@@ -15,12 +15,12 @@ set background=dark
 colorscheme hybrid
 
 " C-h C-l で先頭、末尾に
-nnoremap <C-h> ^
-nnoremap <C-l> $
+noremap <C-h> ^
+noremap <C-l> $
 
 " Ctrl + j と Ctrl + k で 段落の前後に移動
-nnoremap <C-j> }
-nnoremap <C-k> {
+noremap <C-j> }
+noremap <C-k> {
 
 " クリップボードにヤンク
 set clipboard+=unnamed
